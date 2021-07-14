@@ -1,9 +1,13 @@
+/* import font family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* introduce fonts poppins */
 body{
     font-
     family: 'Poppins', sans-serif;
 }
-.head{
+/* starts website header */
+.website-title{
     border: 5px solid white;
     width: 1440px;
     height: 677px;
@@ -11,12 +15,14 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+/* title of website */
 .title{
     margin-top: 207px;
     margin-left: 156px;
     font-size: 64px;
     color: white;
 }
+/* introduce button */
 .Watch-live{
     border: 1px solid white;
     Width: 168px;
@@ -27,6 +33,7 @@ body{
     margin-left: 156px;
     margin-top: 27px;
 }
+/* hover effect */
 .Watch-live:hover {
     color: tomato;
     transform: scale(1.5);
@@ -39,12 +46,15 @@ body{
     color: rgb(146, 101, 101); 
     size: 16px;  
 }
+/* banner image addition */
 .banner-image{
     Width: 556.01px;
     Height: 438px;
     margin-top: 153px;
     margin-right: 141px;
 }
+/* ends of header */
+/* starts list of legend  */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -73,6 +83,8 @@ body{
     font-weight: 400;
     font-size: 16px;
 }
+/* ends of legendary players list */
+/* start copa america highlights */
 .highlights-title{
     font-size: 30px;
     padding-left: 40px;
@@ -117,7 +129,8 @@ body{
     color: white; 
     size: 16px;
 }
-/* Video Album Section CSS Starts */
+/* copa america highlights end */
+/* copa america css videos list */
 
 .container {
     background-color: #608297be;
@@ -146,6 +159,8 @@ body{
 .video {
     border: 1px solid #ffe6e9;
 }
+/* end of css video list */
+/* footer work css starts */
 footer{
     display: flex;
     flex-direction: column;
@@ -166,6 +181,7 @@ footer{
     padding: 8px;
     border-radius: 50%;
 }
+/* ends of footer css work */
 /* -------------------
     media-queries 
 --------------------*/
@@ -177,9 +193,45 @@ footer{
        background-color: #2D25A0;
        grid-template-columns: repeat(2, 1fr);
    } 
-   .players, .highlights, .highlights-title{
+   .players, .player, .highlights, .highlights-title, .recap{
        display: grid;
        grid-template-columns: 1fr;
-       grid-column-gap:30px;
-       margin-top: 70px;
+       margin-right: 500px;
    }
+   .player img{
+    width: 100%;
+    height: 50%;
+   }
+     /* video album css starts */
+     .container {
+        padding: 20px 0px;
+    }
+
+    .video-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .video-title h1 {
+        color: wheat;
+        font-size: 30px;
+    }
+
+    .videos {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .video {
+        border: 1px solid #ffe6e9;
+    }
+
+    /* video album css ends */
+ /* footer section css starts */
+
+ .footer-img img {
+    width: 272px;
+    margin-bottom: 20px;
+}
+
+/* footer sectoin css ends */
